@@ -8,23 +8,13 @@ I am thrilled to have participated in the SENSORIUM 2023 Competition! This compe
 
 For comprehensive details about the competition, I referred to the [SENSORIUM Competition Website](http://sensorium-competition.net/).
 
-## My Journey and Achievements
-- **Submission Date:** 6 August 2023
-- **Final Rank:** 
-- 
-- **Submission Files:** I successfully submitted the following prediction files:
-  - `predictions_live_main.parquet.brotli`: Predicted responses for the live test set in the main track.
-  - `predictions_final_main.parquet.brotli`: Predicted responses for the final test set in the main track.
-  - `predictions_final_ood.parquet.brotli`: Predicted responses for the final test set in the out-of-distribution (OOD) track.
+## What is in this repository
 
-## My Submission Format
-Each of my submission files adheres to the specified format, containing the following columns:
-- `mouse`: Session name
-- `trial_indices`: Trial indices (e.g., '1.npy')
-- `prediction`: A list of lists with dimensions `(number_of_neurons, n_frames)`, where `n_frames` represents the frames for the video.
-- `neuron_ids`: Order of neurons in my predictions.
+> **Attribution.** The `sensorium/` package, the two notebooks and the figures are taken from the organizers' official starter kit, [ecker-lab/sensorium_2023](https://github.com/ecker-lab/sensorium_2023) (MIT licence, declared in its `pyproject.toml`). Most files are unchanged; small differences reflect the version I copied. See [NOTICE](NOTICE).
 
-To create these files, I followed the provided example code using pandas.
+- I entered SENSORIUM 2023 (submission date 6 August 2023) following the starter kit's example pipeline.
+- My prediction files and final rank are not included in this repository.
+- `notebooks/models_demo.ipynb` in this repo shows a run that stopped with `ModuleNotFoundError: No module named 'sensorium'` (the package was not installed in that environment), so it does not contain trained-model results.
 
 ## Acknowledgments
 I want to express my gratitude to the competition organizers for creating such an exciting and challenging event. Participating in the SENSORIUM 2023 Competition has been a rewarding experience that has enhanced my skills and knowledge in neural prediction and analysis.
